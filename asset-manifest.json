@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Abraham-Netflix/static/css/main.e8ec0d3e.css",
+    "main.js": "/Abraham-Netflix/static/js/main.96e96dbc.js",
+    "static/media/NetflixLogo.png": "/Abraham-Netflix/static/media/NetflixLogo.303904f75553a51bbf31.png",
+    "index.html": "/Abraham-Netflix/index.html",
+    "main.e8ec0d3e.css.map": "/Abraham-Netflix/static/css/main.e8ec0d3e.css.map",
+    "main.96e96dbc.js.map": "/Abraham-Netflix/static/js/main.96e96dbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8ec0d3e.css",
+    "static/js/main.96e96dbc.js"
+  ]
+}

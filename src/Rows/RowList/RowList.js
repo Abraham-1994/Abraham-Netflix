@@ -1,5 +1,6 @@
 import React from "react";
 import Row from "../Row/Row";
+import "../RowList/rowList.css"
 import requests from "../../utils/request";
 
 const RowList = () => {

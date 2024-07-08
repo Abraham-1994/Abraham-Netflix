@@ -1,0 +1,28 @@
+/* Assuming you have a global CSS file or a component-specific CSS */
+@media (max-width: 1200px) {
+  /* Adjustments for medium-sized screens */
+  .row {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Adjustments for tablets and smaller desktops */
+  .row {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for tablets and large phones */
+  .row {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjustments for smaller phones */
+  .row {
+    padding: 0 3px;
+  }
+}

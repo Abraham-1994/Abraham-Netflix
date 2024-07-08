@@ -1,29 +1,76 @@
-.row__poster {
-	width: 100%;
-	object-fit: contain;
-	max-height: 100px;
-	transition: transform 450ms;
-	margin-right: 10px;
+.row {
+  margin-bottom: 20px;
 }
+
+.row h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
 .row__posters {
-	display: flex;
-	overflow-y: hidden;
-	overflow-x: scroll;
-	padding: 20px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  /* Responsive adjustments */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  white-space: nowrap;
 }
+
 .row__posters::-webkit-scrollbar {
-	display: none;
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
+
+.row__poster {
+  object-fit: contain;
+  max-height: 250px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
 .row__poster:hover {
-	transform: scale(1.08);
+  transform: scale(1.08);
 }
-.row__posterLarge{
+
+.row__posterLarge {
+  max-height: 350px;
+}
+
+@media (max-width: 768px) {
+  .row__posters {
+    padding: 20px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .row__poster {
+    max-height: 200px;
+    margin-right: 5px;
+  }
+
+  .row__posterLarge {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .row h1 {
+    font-size: 1.2rem;
+  }
+
+  .row__poster {
+    max-height: 150px;
+    margin-right: 3px;
+  }
+
+  .row__posterLarge {
     max-height: 250px;
-}
-.row__posterLarge:hover{
-    transform: scale(1.09);
-}
-.row{
-    margin-left: 20px;
-	color: white;
+  }
 }
